@@ -12,4 +12,4 @@ Made by a small team of Camosun Students, for the Dec 2024 Capstone Symposium :p
 |     3|  Tailwind CSS |
 |     4|     NextUI    |
 
-<details>
+</details>
