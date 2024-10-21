@@ -8,7 +8,8 @@ Made by a small team of Camosun Students, for the Dec 2024 Capstone Symposium :p
 | Site |  Technologies |
 |-----:|---------------|
 |     1|     React     |
-|     2|    Tailwind   |
-|     3|     NextUI    |
+|     2|     Vite      |
+|     3|  Tailwind CSS |
+|     4|     NextUI    |
 
 <details>
