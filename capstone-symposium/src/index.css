@@ -41,13 +41,13 @@ img {
 }
 
 .navbar-title {
-  @apply flex justify-start text-xl lg:text-2xl font-semibold font-dejavu text-gray-200 px-3 mx-2;
+  @apply flex justify-start text-xl md:text-2xl lg:text-3xl font-semibold font-dejavu text-gray-200 px-3 mx-2;
 }
 
 .navbar-link {
   padding: 12px 16px;
   border-radius: 10px;
-  @apply justify-end text-xl lg:text-2xl text-white no-underline mx-2;
+  @apply justify-end text-xl md:text-2xl lg:text-3xl text-white no-underline mx-2;
 }
 
 .navbar-link:hover {
@@ -78,8 +78,8 @@ bg-slate-400
 
 .footer-container,
 .footer-span {
-  @apply text-xl lg:text-2xl mx-auto ml-2 p-1 max-w-screen-xl md:flex 
-  md:items-center md:justify-between;
+  @apply text-xl md:text-2xl lg:text-3xl mx-auto ml-2 p-1 lg:py-2 max-w-screen-xl md:flex 
+  md:items-center md:justify-between font-semibold;
 }
 
 /*  Home Page  */
@@ -143,11 +143,12 @@ hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
 
 /* Teams Page & Cards */
 .team-heading {
-  @apply text-slate-500 text-[6.5rem] font-helvetica rounded-md italic my-5 md:mb-auto mt-20 md:mt-0 lg:mt-0;
+  @apply text-slate-500 text-[6.5rem] font-helvetica rounded-md italic my-6 md:mb-auto mt-2 md:mt-0 lg:mt-6 lg:mr-4;
 }
 
 .teams-container {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-1 md:px-10 place-items-center;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-1 md:px-8 place-items-center
+  lg:container md:h-[1250px] w-auto lg:w-[1500px] lg:h-[950px];
 }
 
 .teams-accent {

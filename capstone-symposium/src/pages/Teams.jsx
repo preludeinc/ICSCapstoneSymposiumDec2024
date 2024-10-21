@@ -31,7 +31,7 @@ export const Teams = () => {
     <>
     <Default>
       <section className="flex flex-col md:flex-row justify-center align-center md:px-5 py-[5rem] md:py-[5rem] lg:py-[20rem]">
-        <div className="teams-container lg:container md:h-[1250px] w-auto lg:w-[1500px] lg:h-[950px]">
+        <div className="teams-container">
           <h1 className="team-heading">
             Teams
           </h1>

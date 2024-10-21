@@ -6,7 +6,8 @@ import HeroImage from "../assets/images/mechanical_keyboard.jpg";
 import { siteConfig } from "../config/site";
 
 export const Home = () => {
-  let intro = `The ICS graduating class is excited to welcome you to the Winter 2024 Information and Computer Systems (ICS) Capstone Symposium!`;
+  let intro = `The ICS graduating class is excited to welcome \
+  you to the Winter 2024 Information and Computer Systems (ICS) Capstone Symposium!`;
 
   return (
     <>
