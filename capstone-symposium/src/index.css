@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #d8e0e6;
+  @apply m-0 font-roboto text-neutral-200;
+}
+
+h1 {
+  @apply mb-4 text-3xl
+    leading-none tracking-tight
+  text-gray-900 md:text-4xl 
+    lg:text-5xl dark:text-neutral-300;
+}
+
+p {
+  @apply text-base pt-2;
+}
+
+main {
+  @apply max-w-5xl my-12 mx-auto px-0;
+}
+
+img {
+  @apply flex flex-1 w-auto h-auto object-contain;
+}
+
+/*  Navbar */
+.navbar {
+  @apply w-full h-20 top-0 bg-gray-900 text-white
+  flex px-2 items-center z-20;
+}
+
+.hamburger {
+  @apply hidden;
+}
+
+.navbar-logo {
+  @apply flex-shrink-0;
+}
+
+.navbar-title {
+  @apply flex justify-start text-xl lg:text-2xl font-semibold font-dejavu text-gray-200 px-3 mx-2;
+}
+
+.navbar-link {
+  padding: 12px 16px;
+  border-radius: 10px;
+  @apply justify-end text-xl lg:text-2xl text-white no-underline mx-2;
+}
+
+.navbar-link:hover {
+  background-color: #c1d959;
+  @apply text-gray-800;
+}
+
+.nav-mobile-container {
+  @apply fixed left-0 right-0 shadow-2xl top-[4.5rem] p-4 pt-2 bg-gray-900 border-b border-b-white/20 z-20;
+}
+
+/* Mobile nav styles */
+.nav-mobile-link {
+  @apply flex items-center justify-between w-full p-3.5 rounded-xl z-10;
+}
+
+.nav-mobile-links {
+  @apply w-full p-[0.08rem] rounded-xl hover:text-lime-300 hover:bg-gray-800;
+}
+
+/*  Footer */
+footer {
+  @apply fixed 
+bg-slate-400
+  bottom-0 w-full 
+  z-20 p-1;
+}
+
+.footer-container,
+.footer-span {
+  @apply text-xl lg:text-2xl mx-auto ml-2 p-1 max-w-screen-xl md:flex 
+  md:items-center md:justify-between;
+}
+
+/*  Home Page  */
+.home-container {
+  @apply bg-white rounded-lg mt-5 p-5;
+}
+
+.home-content {
+  @apply grid gap-4 justify-start;
+}
+
+.event-details {
+  @apply bg-gray-600 p-8 rounded-lg;
+}
+
+.event-date {
+  @apply text-xl;
+}
+
+.event-time,
+.event-title {
+  @apply pt-4 pr-1 text-left text-3xl;
+}
+
+.event-description {
+  @apply pt-2 text-2xl;
+}
+
+.buttons {
+  @apply flex justify-start pt-3 mx-auto;
+}
+
+.page-heading {
+  @apply flex justify-center text-slate-500 text-7xl mt-5 mx-auto
+  font-helvetica rounded-md italic;
+}
+
+.button-default {
+  /*color: #c7d56d;*/
+  /* background-color: #1e421e; */
+  border-radius: 30px;
+  @apply text-xl
+ text-white shadow hover:shadow-lg outline-none
+  focus:outline-none mr-1 mb-1 px-6 py-2 ease-linear 
+  transition-all duration-150 bg-slate-950
+  cursor-pointer border-none font-roboto;
+}
+
+.button-group {
+  @apply text-lg p-1
+ text-black shadow hover:shadow-lg outline-none
+  focus:outline-none ease-linear 
+  transition-all duration-150 bg-transparent
+  border border-slate-950 rounded-s-lg
+hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
+}
+
+.button-default:hover {
+  background-color: #aabb5c;
+}
+
+/* Teams Page & Cards */
+.team-heading {
+  @apply text-slate-500 text-[6.5rem] font-helvetica rounded-md italic my-5 md:mb-auto mt-20 md:mt-0 lg:mt-0;
+}
+
+.teams-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-1 md:px-10 place-items-center;
+}
+
+.teams-accent {
+  @apply md:bg-slate-950 md:h-1/2 md:opacity-90;
+}
+
+.team-card-container {
+  @apply grid bg-opacity-85 p-3 md:p-10 md:my-10 md:py-10 grid-cols-2 lg:grid-rows-4 lg:gap-3 place-items-center
+  w-[22.5rem] h-[22.5rem] lg:h-[29rem] lg:w-[29rem] rounded-md border-8 bg-gray-50;
+}
+
+.team-card-heading {
+  @apply text-slate-500 text-[1.7rem] lg:text-[2.5rem] font-semibold font-roboto mt-10 ml-5 md:ml-0 lg:mt-10;
+}
+
+.card-section {
+  @apply relative flex flex-col justify-end
+  overflow-hidden p-5;
+}
+
+.arrow-icon {
+  @apply text-lg text-slate-400 hover:text-slate-200 m-2 visible;
+}
+
+.arrow-button {
+  @apply w-[4rem] h-[4rem] md:w-[4.5rem] md:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] border-2 
+  place-items-center text-slate-950 rounded-full transition-colors ease-in-out 
+  hover:bg-blue-950 hover:border-slate-200
+  cursor-pointer mt-3 mr-1 md:mt-0 md:mr-0 md:mb-3 lg:mt-6;
+}
+
+/* Project Modal - on Teams Page */
+.project-modal {
+  @apply flex md:overflow-x-hidden overflow-y-auto justify-center items-center fixed inset-0 z-50 outline-none focus:outline-none;
+}
+
+.project-modal-container {
+  @apply bg-slate-900 flex flex-col border-0 rounded-lg shadow-lg relative w-full outline-none focus:outline-none px-5 lg:px-16 lg:pt-2;
+}
+
+.modal-cb-button {
+  @apply bg-transparent border-0 float-right leading-none font-semibold outline-none focus:outline-none p-2 md:p-10 ml-auto md:mt-7;
+}
+
+.modal-code-bracket {
+  @apply bg-transparent text-white h-10 w-10 md:h-14 md:w-14 text-2xl block outline-none;
+}
+
+.team-logo {
+  @apply flex h-[250px] w-[250px] md:h-[500px] md:w-[500px] object-cover mt-5 my-3 md:my-[3.5rem];
+}
+
+.modal-team-heading {
+  @apply text-4xl md:text-[3.75rem] font-semibold text-center pt-1 md:py-2;
+}
+
+.modal-sponsor-heading {
+  @apply text-3xl md:text-5xl md:font-semibold py-1 my-3 md:my-4 md:py-2 md:mt-5;
+}
+
+.modal-heading {
+  @apply text-3xl md:text-4xl lg:text-5xl pt-2 px-1 mt-2 md:pt-2 md:mt-5 lg:mt-10 md:my-1 font-bold;
+}
+
+.modal-student-name {
+  @apply text-3xl lg:text-5xl my-4 md:mt-8 md:mb-5 mx-auto font-semibold;
+}
+
+.modal-student-bio-text {
+  @apply text-3xl lg:text-4xl md:mt-5 mx-auto mb-10 md:mb-5 md:pl-40;
+}
+
+.modal-text {
+  @apply font-sans text-white text-3xl lg:text-4xl px-2 pb-5 my-5;
+}
+
+/* Team Member - Within Modal */
+.team-member-info {
+  @apply mx-auto mt-5 text-center;
+}
+
+.team-grid {
+  @apply gap-3 place-items-center;
+}
+
+
+/* Registration Page */
+.reg-heading {
+  @apply m-10 mb-10 md:mt-5 text-slate-500 text-[5rem] font-helvetica rounded-md mx-auto italic;
+  
+}
+
+.reg-container {
+  @apply md:m-[5rem];
+}
+
+.reg-accent {
+  @apply bg-slate-900 md:bg-slate-950 h-full md:h-[150%] md:mt-20 md:opacity-90;
+}
+
+.sponsor-heading {
+  @apply text-xl md:text-xl lg:text-2xl sm:text-xl px-5;
+}
+
+
+/* Media Queries */
+@media (min-width: 640px) {
+  main {
+    @apply px-8;
+  }
+
+  .heading-content {
+    @apply flex-row justify-between items-center;
+  }
+
+  /* h2 {
+    flex-basis: 30%;
+  } */
+
+  /* p {
+    flex-basis: 65%;
+  } */
+
+  /* Teams Page */
+  .team-grid {
+    @apply grid-cols-2;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    @apply flex flex-wrap items-start justify-start pt-3;
+  }
+  .navbar-title {
+    @apply hidden;
+  }
+
+  .hamburger {
+    @apply visible;
+  }
+
+  .reg-container {
+    @apply flex flex-col;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-grid {
+    @apply grid-cols-3;
+  }
+}

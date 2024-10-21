@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "team": "Bit by Bit",
+    "photo": "/arma_automotive.png",
+    "sponsor": "Arma Automotive Inc.",
+    "students": ["Hanson Chan", "Jaspal Dhaliwal", "Kento Hyono"]
+  },
+  {
+    "id": 1,
+    "team": "Khoreía",
+    "photo": "/raino_dance.png",
+    "sponsor": "Raino Dance",
+    "students": ["Ryan Kim", "Wyatt Lane", "Seree Samutchaikit"]
+  },
+  {
+    "id": 2,
+    "team": "Alt-F4",
+    "photo": "/woo_woo.png",
+    "sponsor": "Kimberlee Klein",
+    "students": ["Seamus O'Leary", "Karnveer Mall"]
+  },
+  {
+    "id": 3,
+    "team": "BitFusion",
+    "photo": "/camosun_innovates.png",
+    "sponsor": "Camosun Innovates",
+    "students": ["Dyson Polvi", "Manuel Rodriguez", "Charlie Thai"]
+  },
+  {
+    "id": 4,
+    "team": "Code Crafters",
+    "photo": "/3treeslogo_dark_h.svg",
+    "sponsor": "Three Trees Technical",
+    "students": ["Manu Kurian", "Jessica Guenter", "Angela Ziesel"]
+  }
+]

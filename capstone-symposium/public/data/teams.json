@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "team": "Bit by Bit",
+    "photo": "/arma_automotive.png",
+    "sponsor": "Arma Automotive Inc.",
+    "href": "team/bitbybit",
+    "photos": ""
+  },
+  {
+    "id": 1,
+    "team": "Khoreía",
+    "sponsor": "Raino Dance",
+    "photo": "/raino_dance.png",
+    "href": "team/khoreía",
+    "photos": ""
+  },
+  {
+    "id": 2,
+    "team": "Alt-F4",
+    "sponsor": "Kimberlee Klein",
+    "photo": "/woo_woo.png",
+    "href": "team/alt-f4",
+    "photos": ""
+  },
+  {
+    "id": 3,
+    "team": "BitFusion",
+    "sponsor": "Camosun Innovates",
+    "photo": "/camosun_innovates.png",
+    "href": "team/bitfusion",
+    "photos": ""
+  },
+  {
+    "id": 4,
+    "team": "Code Crafters",
+    "sponsor": "Three Trees Technical",
+    "photo": "/3treeslogo_h.svg",
+    "href": "team/codecrafters",
+    "photos": ""
+  }
+]
