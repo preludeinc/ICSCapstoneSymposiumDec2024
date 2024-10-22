@@ -7,7 +7,8 @@ export const TeamCard = ({ team }) => {
   const [projectData, setProjectData] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const projectRef = useRef([]);
-  let photo = `/images/${team.photo}`;
+  let sponsorLogo = `/images/${team.photo}`;
+  let teamPhoto = `/images/${team.team_photo}`;
   let clickedTeam;
 
   useEffect(() => {
@@ -46,11 +47,20 @@ export const TeamCard = ({ team }) => {
       <div className="team-card-container">
         <div className="flex col-span-3 row-span-3">
           {" "}
-          <div className="justify-center align-middle">
-            <Image
-              className="w-full h-[200px] lg:[h-250px] object-contain m-auto"
-              src={photo}
-              alt="Sponsor Image"
+          <div className="justify-start align-middle relative group">
+            <img
+              className="w-[400px] md:w-[430px] h-[250px] object-contain align-middle
+              justify-center p-2 mt-4 md:p-0
+              transition-opacity duration-300 ease-in-out group-hover:opacity-0"
+              src={sponsorLogo}
+              alt="Sponsor Logo"
+            />
+            <img
+              className="absolute left-0 top-0 w-full object-cover
+              transition-opacity duration-300 ease-in-out opacity-0 mx-auto
+              group-hover:opacity-100 justify-center mb-16"
+              src={teamPhoto}
+              alt="Teams"
             />
           </div>
         </div>

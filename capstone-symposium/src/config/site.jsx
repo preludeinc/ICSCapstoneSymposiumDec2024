@@ -26,13 +26,13 @@ export const siteConfig = {
     },
     {
         label: "Register",
-        href: "/Register",
+        href: "/register",
     },
     ],
     homeButtons: [
     {
         label: "Teams",
-        href: "Teams",
+        href: "/teams",
     },
     {
         label: "Register",

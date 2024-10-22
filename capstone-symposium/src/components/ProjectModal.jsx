@@ -4,7 +4,7 @@ import { XCircleIcon } from "@heroicons/react/24/outline";
 
 export const ProjectModal = ({ clickedTeam, closeModal }) => {
   let sponsorText = clickedTeam.sponsor;
-  let teamPhoto = `/images/${clickedTeam.photo}`;
+  let teamPhoto = `/images/sponsors/${clickedTeam.photo}`;
   let students = clickedTeam.students;
   return (
     <>
@@ -16,7 +16,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
               className="modal-cb-button"
               onPress={() => closeModal()}
             >
-              <span className="modal-code-bracket">
+              <span className="modal-close">
                 <XCircleIcon />
               </span>
             </Button>
