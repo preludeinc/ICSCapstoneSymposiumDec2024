@@ -1,6 +1,6 @@
 import Bio from "./Bio.jsx";
 import { Button } from "@nextui-org/button";
-import { CodeBracketIcon } from "@heroicons/react/24/outline";
+import { XCircleIcon } from "@heroicons/react/24/outline";
 
 export const ProjectModal = ({ clickedTeam, closeModal }) => {
   let sponsorText = clickedTeam.sponsor;
@@ -9,7 +9,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
   return (
     <>
       <div className="project-modal">
-        <div className="max-w-[1500px] md:mx-auto max-h-[98vh] lg:max-h-[90vh] md:mb-40">
+        <div className="max-w-[2000px] md:mx-auto max-h-[98vh] lg:max-h-[90vh] md:mb-40">
           <div className="project-modal-container">
             {/* header */}
             <Button
@@ -17,7 +17,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
               onPress={() => closeModal()}
             >
               <span className="modal-code-bracket">
-                <CodeBracketIcon />
+                <XCircleIcon />
               </span>
             </Button>
             <div className="flex flex-col items-center justify-center p-2 py-2">

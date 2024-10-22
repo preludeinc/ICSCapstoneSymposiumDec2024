@@ -10,7 +10,6 @@ export const Navbar = () => {
   return (
     <nav className="navbar fixed" position="sticky">
       <Hamburger toggled={isOpen} size={35} toggle={setOpen} />
-        <div className="flex-1 flex items-center justify-end">
           <AnimatePresence>
             {isOpen && (
               <div className="nav-mobile-container top-0">
@@ -30,7 +29,6 @@ export const Navbar = () => {
               </div>
             )}
           </AnimatePresence>
-      </div>
     </nav>
   );
 };

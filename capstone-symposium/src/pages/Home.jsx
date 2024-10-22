@@ -19,11 +19,15 @@ export const Home = () => {
               <div className="text-2xl md:text-3xl text-center text-semibold text-black inline-flex border border-[#222]/10 px-5 py-2 my-1 md:px-4 md:mx-12 md:mt-24 rounded-lg tracking-tight">
                 Information & Computer Systems
               </div>
-              <h1 className="text-transparent bg-clip-text text-6xl md:text-8xl my-4 px-5 md:my-10 md:px-10 font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] justify-center">
+              <h1 className="text-transparent bg-clip-text text-6xl md:text-8xl my-4 px-4 md:my-10 md:px-10 font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] justify-center">
                 Join our Capstone
               </h1>
-              <p className="font-sans text-4xl mt-4 px-2 md:text-4xl md:my-12 md:px-10 text-[#010D3E]">{intro}</p>
-              <div className="flex gap-1 mb-8 md:mt-10 mx-2 text-black my-4 md:px-6 md:py-4">
+              <div className="px-2 md:px-12 text-[#010D3E]">
+                <p className="font-sans text-4xl mb-1 font-semibold px-2">Dec. 12th</p>
+                <p className="font-sans text-4xl px-2">4:30 - 6:30pm</p>
+                <p className="font-sans text-3xl md:text-3xl md:mt-8">{intro}</p>
+              <div className="flex gap-1 mb-2 md:mt-10 mx-2 text-black my-4 md:px-6 md:py-4">
+              </div>
                 {siteConfig.homeButtons.map((button) => (
                   <div
                     className="inline-flex rounded-sm shadow-sm md:rounded-md button-group"
