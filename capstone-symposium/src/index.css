@@ -130,7 +130,7 @@ bg-slate-400
   focus:outline-none ease-linear 
   transition-all duration-150 bg-transparent
   border border-slate-950 rounded-s-lg
-hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
+hover:bg-[#c1d959] cursor-pointer font-roboto;
 }
 
 /* Teams Page & Cards */

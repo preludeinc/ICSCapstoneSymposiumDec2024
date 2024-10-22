@@ -2,7 +2,8 @@ import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import HeroImage from "../assets/images/mechanical_keyboard.jpg";
+import HeroImage1 from "../assets/images/cube-closeup.jpg";
+import HeroImage2 from "../assets/images/cube.jpg"
 import { siteConfig } from "../config/site";
 
 export const Home = () => {
@@ -12,32 +13,37 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <section className="">
-        <div className="container mx-auto flex md:flex-row flex-col mt-24 md:mt-0">
-          <div className="md:flex items-center justify-center mt-10 mx-4 md:m4-10 md:mb-10">
-            <div className="w-[550px] md:w-[800px] pt-2 m-4 md:pr-40 md:py-[10rem] md:mt-10">
-              <div className="text-2xl md:text-3xl text-center text-semibold text-black inline-flex border border-[#222]/10 px-5 py-2 my-1 md:px-4 md:mx-12 md:mt-24 rounded-lg tracking-tight">
+      <section className=" pb-20 md:pt-5 md:pb-10 overflow-x-clip">
+        <div className="container flex justify-center pt-8 md:pt-20">
+          <div className="md:flex items-center">
+            <div className="mt-8 md:h-[648px] md:flex-1 relative pb-8">
+              <img className="md:absolute md:h-full md:w-auto md:max-w-none md:right-6" src={HeroImage1} alt="hero" />
+            </div>
+            <div className="md:w-[478px]">
+              <div className="text-sm text-black inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
                 Information & Computer Systems
               </div>
-              <h1 className="text-transparent bg-clip-text text-6xl md:text-8xl my-4 px-4 md:my-10 md:px-10 font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] justify-center">
-                Join our Capstone
+              <h1 className="text-transparent bg-clip-text mt-6 text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80]">
+                Join Our Capstone
               </h1>
-              <div className="px-2 md:px-12 text-[#010D3E]">
-                <p className="font-sans text-4xl mb-1 font-semibold px-2">Dec. 12th</p>
-                <p className="font-sans text-4xl px-2">4:30 - 6:30pm</p>
-                <p className="font-sans text-3xl md:text-3xl md:mt-8">{intro}</p>
-              <div className="flex gap-1 mb-2 md:mt-10 mx-2 text-black my-4 md:px-6 md:py-4">
-              </div>
+              <h3 className="text-[#001E80] mt-6 text-2xl md:text-3xl font-bold tracking-tighter">
+                Dec. 12
+              </h3>
+              <h3 className="text-[#001E80] text-2xl md:text-3xl font-bold tracking-tighter">
+                4pm - 7pm
+              </h3>
+              <p className="text-xl text-[#010D3E] tracking-tight mt-6">{intro}</p>
+              <div className="flex gap-1 items-center mt-[30px] text-black">
                 {siteConfig.homeButtons.map((button) => (
                   <div
-                    className="inline-flex rounded-sm shadow-sm md:rounded-md button-group"
+                    class="inline-flex rounded-md shadow-sm button-group"
                     role="group"
                   >
                     <Button
                       key={button.href}
                       as={Link}
+                      className=""
                       variant="flat"
-                      className="text-2xl md:text-4xl font-helvetica m-1 md:m-2"
                       href={button.href}
                     >
                       {button.label}
@@ -46,8 +52,8 @@ export const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="md:scale-x-100 md:scale-y-100 lg:md:h-[1250px] justify-center items-center md:flex-1 relative">
-              <img className="md:h-full md:w-auto md:max-w-none m-4 md:m-0" src={HeroImage} alt="hero"></img>
+            <div className="mt-8 md:h-[648px] md:flex-1 relative pb-8">
+              <img className="md:absolute md:h-full md:w-auto md:max-w-none md:left-6" src={HeroImage2} alt="hero" />
             </div>
           </div>
         </div>
