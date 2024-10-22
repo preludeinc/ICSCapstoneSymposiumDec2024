@@ -20,7 +20,7 @@ export const Home = () => {
               <img className="md:absolute md:h-full md:w-auto md:max-w-none md:right-6" src={HeroImage1} alt="hero" />
             </div>
             <div className="md:w-[478px]">
-              <div className="text-sm text-black inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
+              <div className="text-md lg:text-lg text-black inline-flex border border-[#222]/10 px-3 py-1 lg:py-2 rounded-lg tracking-tight">
                 Information & Computer Systems
               </div>
               <h1 className="text-transparent bg-clip-text mt-6 text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80]">
@@ -32,7 +32,7 @@ export const Home = () => {
               <h3 className="text-[#001E80] text-2xl md:text-3xl font-bold tracking-tighter">
                 4pm - 7pm
               </h3>
-              <p className="text-xl text-[#010D3E] tracking-tight mt-6">{intro}</p>
+              <p className="text-xl lg:text-2xl text-[#010D3E] tracking-tight mt-6 font-sans pr-24">{intro}</p>
               <div className="flex gap-1 items-center mt-[30px] text-black">
                 {siteConfig.homeButtons.map((button) => (
                   <div
@@ -42,7 +42,7 @@ export const Home = () => {
                     <Button
                       key={button.href}
                       as={Link}
-                      className=""
+                      className="text-lg lg:text-xl"
                       variant="flat"
                       href={button.href}
                     >

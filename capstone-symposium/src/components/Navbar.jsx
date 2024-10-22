@@ -1,4 +1,5 @@
 import { Link } from "@nextui-org/link";
+import { Snippet } from "@nextui-org/snippet";
 import { siteConfig } from "../config/site";
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
@@ -10,8 +11,12 @@ export const Navbar = () => {
   return (
     <nav className="navbar fixed w-full h-64" position="sticky">
       <div className="flex items-center w-full h-full">
-        <Hamburger toggled={isOpen} size={35} toggle={setOpen} />
-        <h1 className="text-2xl md:ml-4 pt-4 md:text-3xl">Camosun Capstone</h1>
+        <div className="px-3">
+          <Hamburger toggled={isOpen} size={50} toggle={setOpen} />
+        </div>
+        <h1 className="text-2xl md:ml-4 pt-4 md:text-3xl place-items-end">
+          <Snippet>Camosun Capstone</Snippet>
+        </h1>
       </div>
       <AnimatePresence>
         {isOpen && (
@@ -21,7 +26,7 @@ export const Navbar = () => {
                 return (
                   <li key={item.href} className="nav-mobile-links">
                     <Link href={item.href} className="nav-mobile-link">
-                      <span className="flex gap-1 text-2xl text-semibold pr-1">
+                      <span className="flex gap-1 text-2xl lg:text-3xl text-semibold pr-1">
                         {item.label}
                       </span>
                     </Link>
