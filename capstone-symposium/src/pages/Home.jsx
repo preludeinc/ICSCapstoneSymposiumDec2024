@@ -57,6 +57,42 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div className="pt-4 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <li>
+              <img className="w-64" src="../images/camosun_innovates.png" alt="Camosun Innovates" />
+            </li>
+            <li>
+              <img className="w-64" src="../images/3treeslogo_h.svg" alt="3 Tree logo" />
+            </li>
+            <li>
+              <img className="w-64 h-20" src="../images/arma_automotive.png" alt="Arma Automotive logo" />
+            </li>
+            <li>
+              <img className="w-64 h-20" src="../images/raino_dance_light.png" alt="Raino Dance logo" />
+            </li>
+            <li>
+              <img className="w-64 h-20" src="../images/woo_woo.png" alt="Woo Woo logo" />
+            </li>
+          </ul>
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+            <li>
+              <img className="w-64" src="../images/camosun_innovates.png" alt="Camosun Innovates" />
+            </li>
+            <li>
+              <img className="w-64" src="../images/3treeslogo_h.svg" alt="3 Tree logo" />
+            </li>
+            <li>
+              <img className="w-64 h-20" src="../images/arma_automotive.png" alt="Arma Automotive logo" />
+            </li>
+            <li>
+              <img className="w-64 h-20" src="../images/raino_dance_light.png" alt="Raino Dance logo" />
+            </li>
+            <li>
+              <img className="w-64 h-20" src="../images/woo_woo.png" alt="Woo Woo logo" />
+            </li>
+          </ul>
+        </div>
       </section>
       <Footer />
     </>

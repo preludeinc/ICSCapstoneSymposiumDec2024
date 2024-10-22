@@ -12,9 +12,15 @@ module.exports = {
       padding: "1rem",
     },
     extend: {
-      backgroundImage: (theme) => ({
-        trees: "url('../assets/images/greentrees.jpg')",
-      }),
+      animation: {
+        'infinite-scroll': 'infinite-scroll 35s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }   
     },
     fontFamily: {
       dejavu: ["DejaVu Sans", "sans-serif"],
