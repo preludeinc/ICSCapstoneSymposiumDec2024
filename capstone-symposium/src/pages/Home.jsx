@@ -13,8 +13,8 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <section className=" pb-20 md:pt-5 md:pb-10 overflow-x-clip">
-        <div className="container flex justify-center pt-8 md:pt-20">
+      <section className="pb-20 md:pt-0 md:pb-10 overflow-x-clip">
+        <div className="container flex justify-center pt-8 md:pt-5">
           <div className="md:flex items-center">
             <div className="mt-8 md:h-[648px] md:flex-1 relative pb-8">
               <img className="md:absolute md:h-full md:w-auto md:max-w-none md:right-6" src={HeroImage1} alt="hero" />
