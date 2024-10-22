@@ -9,7 +9,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
   return (
     <>
       <div className="project-modal">
-        <div className="max-w-[1900px] md:mx-auto max-h-[100vh] lg:max-h-[90vh] md:mb-40">
+        <div className="max-w-[1500px] md:mx-auto max-h-[98vh] lg:max-h-[90vh] md:mb-40">
           <div className="project-modal-container">
             {/* header */}
             <Button
@@ -34,7 +34,7 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
                 </h3>
             </div>
             {/* body */}
-            <div className="relative p-2 md:p-5 md:flex-auto">
+            <div className="relative p-4 md:p-5 md:flex-auto">
               <h2 className="modal-heading my-2">Project Description</h2>
               <p className="modal-text">
                 Concept of the number one Vangelis permanence of the stars
@@ -44,10 +44,10 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
                 white figures in coveralls and helmets are softly dancing
                 something incredible is waiting to be known.
               </p>
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col md:items-start">
                 {/* Names are passed to bio as a placeholder - if mobile 250 if large 400 */}
                 {students.map((student) => (
-                  <Bio name={student} bio={student} />
+                  <Bio key={student} name={student} bio={student} />
                 ))}
                 </div>
                 <h2 className="modal-heading mt-5">Conclusion</h2>

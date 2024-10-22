@@ -46,7 +46,7 @@ export const TeamCard = ({ team }) => {
       <div className="team-card-container">
         <div className="flex col-span-3 row-span-3">
           {" "}
-          <div class="justify-center align-middle">
+          <div className="justify-center align-middle">
             <Image
               className="w-full h-[200px] lg:[h-250px] object-contain m-auto"
               src={photo}

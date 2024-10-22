@@ -41,13 +41,7 @@ img {
 }
 
 .navbar-title {
-  @apply flex justify-start text-xl md:text-2xl lg:text-3xl font-semibold font-dejavu text-gray-200 px-3 mx-2;
-}
-
-.navbar-link {
-  padding: 12px 16px;
-  border-radius: 10px;
-  @apply justify-end text-xl md:text-2xl lg:text-3xl text-white no-underline mx-2;
+  @apply flex justify-start text-xl md:text-2xl lg:text-3xl font-semibold font-sans text-gray-200 px-3 mx-2;
 }
 
 .navbar-link:hover {
@@ -56,7 +50,7 @@ img {
 }
 
 .nav-mobile-container {
-  @apply fixed left-0 right-0 shadow-2xl top-[4.5rem] p-4 pt-2 bg-gray-900 border-b border-b-white/20 z-20;
+  @apply fixed left-0 right-0 shadow-2xl top-[4.5rem] p-4 pt-2 bg-gray-900 border-b z-20;
 }
 
 /* Mobile nav styles */
@@ -78,7 +72,7 @@ bg-slate-400
 
 .footer-container,
 .footer-span {
-  @apply text-xl md:text-2xl lg:text-3xl mx-auto ml-2 p-1 lg:py-2 max-w-screen-xl md:flex 
+  @apply text-xl lg:text-3xl mx-auto ml-2 p-2 lg:py-2 max-w-screen-xl md:flex 
   md:items-center md:justify-between font-semibold;
 }
 
@@ -118,14 +112,16 @@ bg-slate-400
 }
 
 .button-default {
-  /*color: #c7d56d;*/
-  /* background-color: #1e421e; */
   border-radius: 30px;
   @apply text-xl
  text-white shadow hover:shadow-lg outline-none
   focus:outline-none mr-1 mb-1 px-6 py-2 ease-linear 
   transition-all duration-150 bg-slate-950
   cursor-pointer border-none font-roboto;
+}
+
+.button-default:hover {
+  background-color: #aabb5c;
 }
 
 .button-group {
@@ -137,27 +133,19 @@ bg-slate-400
 hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
 }
 
-.button-default:hover {
-  background-color: #aabb5c;
-}
-
 /* Teams Page & Cards */
 .team-heading {
-  @apply text-slate-500 text-[6.5rem] font-helvetica rounded-md italic my-6 md:mb-auto mt-2 md:mt-0 lg:mt-6 lg:mr-4;
+  @apply text-slate-500 text-[6rem] lg:text-8xl font-helvetica rounded-md italic my-10 m-4 md:my-4 md:mb-auto md:mt-0 lg:mt-6 lg:mr-4;
 }
 
 .teams-container {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-1 md:px-8 place-items-center
-  lg:container md:h-[1250px] w-auto lg:w-[1500px] lg:h-[950px];
-}
-
-.teams-accent {
-  @apply md:bg-slate-950 md:h-1/2 md:opacity-90;
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-1 md:px-2 lg:px-1 place-items-center
+  lg:container md:h-[1250px] lg:w-[2250px] lg:h-[1050px];
 }
 
 .team-card-container {
-  @apply grid bg-opacity-85 p-3 md:p-10 md:my-10 md:py-10 grid-cols-2 lg:grid-rows-4 lg:gap-3 place-items-center
-  w-[22.5rem] h-[22.5rem] lg:h-[29rem] lg:w-[29rem] rounded-md border-8 bg-gray-50;
+  @apply grid bg-opacity-85 p-3 mx-5 md:p-10 md:my-10 md:py-10 grid-cols-2 lg:grid-rows-4 lg:gap-3 place-items-center
+  w-[22rem] h-[22rem] md:w-[24rem] md:h-[24rem] lg:h-[28rem] lg:w-[28rem] rounded-md border-8 bg-gray-50;
 }
 
 .team-card-heading {
@@ -166,7 +154,7 @@ hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
 
 .card-section {
   @apply relative flex flex-col justify-end
-  overflow-hidden p-5;
+  overflow-hidden p-4;
 }
 
 .arrow-icon {
@@ -210,7 +198,7 @@ hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
 }
 
 .modal-heading {
-  @apply text-3xl md:text-4xl lg:text-5xl pt-2 px-1 mt-2 md:pt-2 md:mt-5 lg:mt-10 md:my-1 font-bold;
+  @apply text-3xl md:text-4xl lg:text-5xl pt-2 px-2 mt-2 md:pt-2 md:mt-5 lg:mt-10 md:my-1 font-bold;
 }
 
 .modal-student-name {
@@ -245,9 +233,6 @@ hover:bg-slate-950 hover:text-white cursor-pointer font-roboto;
   @apply md:m-[5rem];
 }
 
-.reg-accent {
-  @apply bg-slate-900 md:bg-slate-950 h-full md:h-[150%] md:mt-20 md:opacity-90;
-}
 
 .sponsor-heading {
   @apply text-xl md:text-xl lg:text-2xl sm:text-xl px-5;
