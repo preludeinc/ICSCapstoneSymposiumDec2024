@@ -39,32 +39,5 @@ export const siteConfig = {
         href: "/register",
     },
     ],
-    projectPages: [
-    {
-        id: "0",
-        label: "Bit by Bit",
-        href: "/team/bitbybit",
-    },
-    {
-        id: "1",
-        label: "Khoreía",
-        href: "/team/khoreía",
-    },
-    {
-        id: "2",
-        label: "Khoreía",
-        href: "team/alt-f4",
-    },
-    {
-        id: "3",
-        label: "Bit Fusion",
-        href: "team/bitfusion",
-    },
-    {
-        id: "4",
-        label: "Code Crafters",
-        href: "team/codecrafters",
-    },
-    ],
 };
   

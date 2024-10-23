@@ -23,7 +23,7 @@ export const Register = () => {
           <h1 className="reg-heading">
             Register
           </h1>
-          <div className="reg-container my-2">
+          <div className="reg-container my-1">
             {checkOut ? (
               <div id={checkOut.id} />
             ): null}

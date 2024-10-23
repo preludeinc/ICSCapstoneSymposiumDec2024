@@ -9,11 +9,11 @@ export const ProjectModal = ({ clickedTeam, closeModal }) => {
   return (
     <>
       <div className="project-modal">
-        <div className="max-w-[2000px] md:mx-auto max-h-[98vh] lg:max-h-[90vh] md:mb-40">
+        <div className="max-w-[1800px] md:mx-auto max-h-[98vh] lg:max-h-[90vh] md:mb-40">
           <div className="project-modal-container">
             {/* header */}
             <Button
-              className="modal-cb-button"
+              className="modal-close-button"
               onPress={() => closeModal()}
             >
               <span className="modal-close">
