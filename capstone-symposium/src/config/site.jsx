@@ -11,18 +11,8 @@ export const siteConfig = {
         href: "/teams",
     },
     {
-        label: "Register",
-        href: "/register",
-    },
-    ],
-    navMenuItems: [
-    {
-        label: "Home",
-        href: "/",
-    },
-    {
-        label: "Teams",
-        href: "/teams",
+        label: "Schedule",
+        href: "/schedule"
     },
     {
         label: "Register",
