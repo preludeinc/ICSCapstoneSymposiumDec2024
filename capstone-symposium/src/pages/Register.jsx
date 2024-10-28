@@ -18,12 +18,12 @@ export const Register = () => {
   return (
     <>
     <Default>
-      <div class="container pt-10 my-[4rem] px-4">
+      <div className="container pt-10 my-[4rem] px-4">
       <section className="flex flex-col justify-center align-center">
           <h1 className="reg-heading">
             Register
           </h1>
-          <div className="reg-container my-2">
+          <div className="reg-container my-1">
             {checkOut ? (
               <div id={checkOut.id} />
             ): null}

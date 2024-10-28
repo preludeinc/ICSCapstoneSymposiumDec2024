@@ -2,41 +2,36 @@
   {
     "id": 0,
     "team": "Bit by Bit",
-    "photo": "/arma_automotive.png",
+    "photo": "sponsors/arma_automotive.png",
     "sponsor": "Arma Automotive Inc.",
-    "href": "team/bitbybit",
-    "photos": ""
+    "team_photo": "teams/bit_by_bit.jpg"
   },
   {
     "id": 1,
     "team": "Khoreía",
     "sponsor": "Raino Dance",
-    "photo": "/raino_dance_light.png",
-    "href": "team/khoreía",
-    "photos": ""
+    "photo": "sponsors/raino_dance_light.png",
+    "team_photo": "teams/khoreia.jpg"
   },
   {
     "id": 2,
     "team": "Alt-F4",
     "sponsor": "Kimberlee Klein",
-    "photo": "/woo_woo.png",
-    "href": "team/alt-f4",
-    "photos": ""
+    "photo": "sponsors/woo_woo.png",
+    "team_photo": "teams/alt_f4.jpg"
   },
   {
     "id": 3,
     "team": "BitFusion",
     "sponsor": "Camosun Innovates",
-    "photo": "/camosun_innovates.png",
-    "href": "team/bitfusion",
-    "photos": ""
+    "photo": "sponsors/camosun_innovates.png",
+    "team_photo": "teams/bit_fusion.jpg"
   },
   {
     "id": 4,
     "team": "Code Crafters",
     "sponsor": "Three Trees Technical",
-    "photo": "/3treeslogo_h.svg",
-    "href": "team/codecrafters",
-    "photos": ""
+    "photo": "sponsors/3treeslogo_h.svg",
+    "team_photo": "teams/code_crafters.jpg"
   }
 ]

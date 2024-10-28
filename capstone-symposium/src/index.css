@@ -72,8 +72,12 @@ bg-slate-400
 
 .footer-container,
 .footer-span {
-  @apply text-xl lg:text-3xl mx-auto ml-2 p-2 lg:py-2 max-w-screen-xl md:flex 
+  @apply text-xl mx-auto ml-2 p-2 lg:py-2 max-w-screen-xl md:flex 
   md:items-center md:justify-between font-semibold;
+}
+
+.page-container {
+  @apply flex flex-col md:flex-row justify-center md:px-5 py-[3rem] md:py-[5rem] lg:py-[10rem];
 }
 
 /*  Home Page  */
@@ -139,17 +143,17 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
 }
 
 .teams-container {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-1 md:px-2 lg:px-1 place-items-center
-  lg:container md:h-[1250px] lg:w-[2250px] lg:h-[1050px];
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-2 lg:gap-3 xl:gap-5 md:px-5 lg:px-0 place-items-center
+  lg:container md:h-[1250px] lg:w-[2250px] lg:h-[1050px] xl:w-[2850px] xl:h-[1050px];  
 }
 
 .team-card-container {
-  @apply grid bg-opacity-85 p-3 mx-5 md:p-10 md:my-10 md:py-10 grid-cols-2 lg:grid-rows-4 lg:gap-3 place-items-center
-  w-[22rem] h-[22rem] md:w-[24rem] md:h-[24rem] lg:h-[28rem] lg:w-[28rem] rounded-md border-8 bg-gray-50;
+  @apply grid bg-opacity-85 p-2 mx-5 md:p-10 md:my-10 md:py-10 lg:p-8 lg:m-5 grid-cols-2 lg:grid-rows-4 lg:gap-3 place-items-center
+  w-[22rem] h-[23rem] md:w-[24rem] md:h-[25rem] lg:h-[28rem] lg:w-[29rem] xl:h-[30rem] xl:w-[31rem] rounded-md border-8 bg-gray-50;
 }
 
 .team-card-heading {
-  @apply text-slate-500 text-[1.7rem] lg:text-[2.5rem] font-semibold font-roboto mt-10 ml-5 md:ml-0 lg:mt-10;
+  @apply text-slate-500 text-[1.7rem] lg:text-[2.5rem] font-semibold font-roboto my-[0.75] ml-2 md:mt-10 md:ml-0 lg:mt-12;
 }
 
 .card-section {
@@ -165,7 +169,7 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
   @apply w-[4rem] h-[4rem] md:w-[4.5rem] md:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] border-2 
   place-items-center text-slate-950 rounded-full transition-colors ease-in-out 
   hover:bg-blue-950 hover:border-slate-200
-  cursor-pointer mt-3 mr-1 md:mt-0 md:mr-0 md:mb-3 lg:mt-6;
+  cursor-pointer mr-1 md:mt-0 md:mr-0 lg:mt-8;
 }
 
 /* Project Modal - on Teams Page */
@@ -177,32 +181,32 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
   @apply bg-slate-900 flex flex-col border-0 rounded-lg shadow-lg relative w-full outline-none focus:outline-none px-5 lg:px-16 lg:pt-2;
 }
 
-.modal-cb-button {
+.modal-close-button {
   @apply bg-transparent border-0 float-right leading-none font-semibold outline-none focus:outline-none p-2 md:p-10 ml-auto md:mt-7;
 }
 
-.modal-code-bracket {
-  @apply bg-transparent text-white h-10 w-10 md:h-14 md:w-14 text-2xl block outline-none;
+.modal-close {
+  @apply bg-transparent text-white h-12 w-12 md:h-16 md:w-16 text-2xl block outline-none;
 }
 
 .team-logo {
-  @apply flex h-[250px] w-[250px] md:h-[500px] md:w-[500px] object-cover mt-5 my-3 md:my-[3.5rem];
+  @apply flex h-[250px] w-[250px] md:h-[450px] md:w-[500px] object-contain my-2 md:my-[3rem];
 }
 
 .modal-team-heading {
-  @apply text-4xl md:text-[3.75rem] font-semibold text-center pt-1 md:py-2;
+  @apply text-3xl md:text-[3.75rem] font-semibold text-center mt-3 md:py-3;
 }
 
 .modal-sponsor-heading {
-  @apply text-3xl md:text-5xl md:font-semibold py-1 my-3 md:my-4 md:py-2 md:mt-5;
+  @apply text-3xl md:text-5xl md:font-semibold py-1 my-3 md:my-4 md:py-2 md:mt-3 text-slate-200;
 }
 
 .modal-heading {
-  @apply text-3xl md:text-4xl lg:text-5xl pt-2 px-2 mt-2 md:pt-2 md:mt-5 lg:mt-10 md:my-1 font-bold;
+  @apply text-3xl md:text-4xl lg:text-5xl pt-2 px-2 mt-2 md:pt-2 md:mt-5 lg:mt-10 md:my-1 font-bold text-slate-200;
 }
 
 .modal-student-name {
-  @apply text-3xl lg:text-5xl my-4 md:mt-8 md:mb-5 mx-auto font-semibold;
+  @apply text-3xl lg:text-5xl my-4 md:mt-8 md:mb-5 mx-auto font-semibold text-slate-200;
 }
 
 .modal-student-bio-text {
@@ -210,7 +214,7 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
 }
 
 .modal-text {
-  @apply font-sans text-white text-3xl lg:text-4xl px-2 pb-5 my-5;
+  @apply font-sans text-white text-2xl lg:text-3xl xl:text-4xl px-2 pb-5 my-5;
 }
 
 /* Team Member - Within Modal */
@@ -222,10 +226,16 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
   @apply gap-3 place-items-center;
 }
 
+/* Schedule Page */
+.schedule-heading {
+  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5rem] font-helvetica rounded-md mx-auto italic;
+  
+}
+
 
 /* Registration Page */
 .reg-heading {
-  @apply m-10 mb-10 md:mt-5 text-slate-500 text-[5rem] font-helvetica rounded-md mx-auto italic;
+  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5rem] font-helvetica rounded-md mx-auto italic;
   
 }
 

@@ -8,7 +8,7 @@ const Bio = ({ name, bio }) => {
           <Image
             src="images/gris_placeholder.png"
             alt="Student Photo"
-            className="rounded-full h-[250px] w-[250px] lg:h-[500px] lg:w-[500px] object-cover mt-2"
+            className="rounded-full h-[250px] w-[250px] lg:h-[450px] lg:w-[450px] object-cover mt-2"
           />
           <h3 className="modal-student-name">
             {name}

@@ -11,59 +11,22 @@ export const siteConfig = {
         href: "/teams",
     },
     {
+        label: "Schedule",
+        href: "/schedule"
+    },
+    {
         label: "Register",
         href: "/register",
     },
     ],
-    navMenuItems: [
-    {
-        label: "Home",
-        href: "/",
-    },
+    homeButtons: [
     {
         label: "Teams",
         href: "/teams",
     },
     {
         label: "Register",
-        href: "/Register",
-    },
-    ],
-    homeButtons: [
-    {
-        label: "Teams",
-        href: "Teams",
-    },
-    {
-        label: "Register",
         href: "/register",
-    },
-    ],
-    projectPages: [
-    {
-        id: "0",
-        label: "Bit by Bit",
-        href: "/team/bitbybit",
-    },
-    {
-        id: "1",
-        label: "Khoreía",
-        href: "/team/khoreía",
-    },
-    {
-        id: "2",
-        label: "Khoreía",
-        href: "team/alt-f4",
-    },
-    {
-        id: "3",
-        label: "Bit Fusion",
-        href: "team/bitfusion",
-    },
-    {
-        id: "4",
-        label: "Code Crafters",
-        href: "team/codecrafters",
     },
     ],
 };
