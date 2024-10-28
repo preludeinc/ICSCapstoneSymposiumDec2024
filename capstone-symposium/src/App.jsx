@@ -22,6 +22,7 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
+
 ]);
 
 const App = () => {

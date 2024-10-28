@@ -13,7 +13,7 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <section className="pb-20 md:pt-0 md:pb-10 overflow-x-clip">
+      <section className="pb-20 md:pt-3 md:pb-10 overflow-x-clip">
         <div className="container flex justify-center pt-8 md:pt-5">
           <div className="md:flex items-center">
             <div className="mt-8 md:h-[648px] md:flex-1 relative pb-8">
@@ -31,13 +31,13 @@ export const Home = () => {
                 Dec. 12
               </h3>
               <h3 className="text-[#001E80] text-2xl md:text-3xl font-bold tracking-tighter">
-                4:30pm - 6:30pm
+                4:00pm - 7:00pm
               </h3>
               <p className="text-xl lg:text-2xl text-[#010D3E] tracking-tight mt-6 font-sans pr-24">{intro}</p>
               <div className="flex gap-1 items-center mt-[30px] text-black">
                 {siteConfig.homeButtons.map((button) => (
                   <div
-                    class="inline-flex rounded-md shadow-sm button-group"
+                    className="inline-flex rounded-md shadow-sm button-group"
                     role="group"
                   >
                     <Button
