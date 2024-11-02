@@ -6,12 +6,10 @@ import { ScrollBanner } from "../components/ScrollBanner";
 import { siteConfig } from "../config/site";
 import HeroImageOne from "/images/hero/cube-closeup.jpg";
 import HeroImageTwo from "/images/hero/cube.jpg";
-// import HeroImage1 from "../assets/images/cube-closeup.jpg";
-// import HeroImageTwo from "../assets/images/cube.jpg"
 
 export const Home = () => {
-  let intro = `The ICS graduating class is excited to welcome \
-  you to the Winter 2024 Information and Computer Systems (ICS) Capstone Symposium!`;
+  let intro = `The Information & Computer Systems Technology (ICS), winter graduating class, is excited to welcome \
+  you to the Dec 2024 ICS Capstone Symposium!`;
 
   return (
     <>
@@ -61,12 +59,12 @@ export const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-8 md:h-[60em] md:flex-1 relative pb-8">
+            <div className="mt-10 md:h-[60em] md:flex-1 relative pb-10">
               <img className="hero-two md:left-6" src={HeroImageTwo} alt="hero" /> 
             </div>
           </div>
         </div>
-        <div className="scroll-container">
+        <div className="scroll-container mt-2 lg:mt-4">
         <ScrollBanner />
         </div>
       </section>

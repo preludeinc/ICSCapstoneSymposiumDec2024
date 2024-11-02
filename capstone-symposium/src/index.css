@@ -136,11 +136,11 @@ bg-slate-400
 }
 
 .team-card-container {
-  @apply grid bg-opacity-85 bg-gray-50 gap-1 grid-cols-2 lg:grid-rows-4 lg:gap-4 place-items-center rounded-md border-8 aspect-square m-2 pb-4 px-2 md:m-2 md:pb-0 lg:p-8;
+  @apply grid bg-opacity-85 bg-gray-50 gap-1 grid-cols-2 lg:grid-rows-4 lg:gap-4 place-items-center rounded-md border-8 aspect-square md:m-2 md:p-4 pb-4 px-2 md:mt-4 md:pb-0 lg:p-8;
 }
 
 .team-card-heading {
-  @apply text-slate-500 text-[2em] md:text-[1.75em] lg:text-[2em] font-semibold font-roboto ml-4 mt-5 md:ml-4 md:mt-2 lg:mt-10 lg:-ml-0 text-nowrap;
+  @apply text-slate-500 text-[1.75em] lg:text-[2em] font-semibold font-roboto mt-5 mx-auto md:ml-1 md:mt-2 lg:mt-10 lg:-ml-0 text-nowrap;
 }
 
 .card-section {
@@ -155,7 +155,7 @@ bg-slate-400
 .arrow-button {
   @apply w-[4em] h-[4rem] md:h-[4.25em] md:w-[4.25em] xl:h-[5em] xl:w-[5em] 
 	border-2 place-items-center text-slate-950 rounded-full transition-colors ease-in-out hover:bg-blue-950
-hover:border-slate-200 cursor-pointer mb-4 mr-3 md:mr-4 lg:-mr-1 lg:mt-4;
+hover:border-slate-200 cursor-pointer mb-4 mr-3 lg:mt-4;
 }
 
 .project-modal {
@@ -191,11 +191,11 @@ hover:border-slate-200 cursor-pointer mb-4 mr-3 md:mr-4 lg:-mr-1 lg:mt-4;
 }
 
 .modal-student-name {
-  @apply text-3xl md:text-4xl my-3 md:my-4 md:mt-8 md:mb-5 font-semibold text-slate-200 justify-start px-5 mx-auto;
+  @apply text-3xl md:text-4xl mt-2 mb-1 md:my-4 md:mt-8 md:mb-5 font-semibold text-slate-200 justify-start px-5 mx-auto;
 }
 
 .modal-student-role {
-  @apply text-2xl md:text-3xl text-slate-300 my-1 px-5 mx-auto;
+  @apply text-2xl md:text-3xl text-slate-300 px-5 mx-auto pb-5;
 }
 
 .modal-student-bio-text {

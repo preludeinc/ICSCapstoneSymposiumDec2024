@@ -48,13 +48,13 @@ export const TeamCard = ({ team }) => {
           {" "}
           <div className="justify-center align-middle relative group">
             <img
-              className="w-[22em] h-[15em] md:w-[30em] md:h-[15em] lg:w-[40em] lg:h-[18em] object-contain mx-auto mt-4 md:mt-0 md:p-4 lg:p-4 aspect-square
+              className="w-[22em] h-[18em] md:w-[30em] md:h-[15em] lg:w-[35em]object-contain mx-auto md:p-4 lg:p-1 aspect-square
               transition-opacity duration-300 ease-in-out group-hover:opacity-0"
               src={sponsorLogo}
               alt="Sponsor Logo"
             />
             <img
-              className="absolute left-0 top-0 w-full object-cover
+              className="absolute left-0 top-0 mt-2 w-full object-cover
               transition-opacity duration-300 ease-in-out opacity-0 mx-auto
               group-hover:opacity-100 justify-center"
               src={teamPhoto}
