@@ -18,9 +18,10 @@ export const Teams = () => {
           // stores data across re-renders
           teamRef.current = teams;
           setTeamData(teams);
+        } else {
+          // if an error occurs
+          throw new Error();
         }
-        // if an error occurs
-        throw new Error();
       } catch (err) {
         console.log("Error, unable to fetch data");
       }

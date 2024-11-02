@@ -1,4 +1,3 @@
-import { Image } from "@nextui-org/image";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { useEffect, useRef, useState } from "react";
 import { ProjectModal } from "./ProjectModal"; 
@@ -23,9 +22,9 @@ export const TeamCard = ({ team }) => {
           // stores data across re-renders
           projectRef.current = projects;
           setProjectData(projects);
+        } else {
+          throw new error();
         }
-        // if an error occurs
-        throw new Error();
       } catch (err) {
         console.log("Error, unable to fetch data");
       }
@@ -47,10 +46,9 @@ export const TeamCard = ({ team }) => {
       <div className="team-card-container">
         <div className="flex col-span-3 row-span-3">
           {" "}
-          <div className="justify-start align-middle relative group">
+          <div className="justify-center align-middle relative group">
             <img
-              className="w-[400px] md:w-[430px] h-[250px] object-contain align-middle
-              justify-center p-2 mt-4 md:p-0
+              className="w-[22em] h-[15em] md:w-[30em] md:h-[15em] lg:w-[40em] lg:h-[18em] object-contain mx-auto mt-4 md:mt-0 md:p-4 lg:p-4 aspect-square
               transition-opacity duration-300 ease-in-out group-hover:opacity-0"
               src={sponsorLogo}
               alt="Sponsor Logo"
@@ -58,7 +56,7 @@ export const TeamCard = ({ team }) => {
             <img
               className="absolute left-0 top-0 w-full object-cover
               transition-opacity duration-300 ease-in-out opacity-0 mx-auto
-              group-hover:opacity-100 justify-center mb-16"
+              group-hover:opacity-100 justify-center"
               src={teamPhoto}
               alt="Teams"
             />

@@ -1,21 +1,28 @@
 import { Image } from "@nextui-org/image";
 
-const Bio = ({ name, bio }) => {
+const Bio = ({ student, role, photo, bio_text }) => {
+  let studentPhoto = `/images/students${photo}`;
+
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 my-1 p-2">
-        <div className="flex flex-col items-start mx-auto my-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 mx-0 md:mx-auto">
+        <div className="flex flex-col place-items-center md:mx-auto">
           <Image
-            src="images/gris_placeholder.png"
+            src={studentPhoto}
             alt="Student Photo"
-            className="rounded-full h-[250px] w-[250px] lg:h-[450px] lg:w-[450px] object-cover mt-2"
+            className="rounded-full h-[20em] w-[20em] lg:h-[30em] lg:w-[30em] mt-4 object-cover"
           />
-          <h3 className="modal-student-name">
-            {name}
-          </h3>
+          <div className="flex flex-col">
+            <h3 className="modal-student-name">
+              {student}
+            </h3>
+            <h4 className="modal-student-role">
+              {role}
+            </h4>
+          </div>
         </div>
-        <div className="grid-cols-1 md:grid-cols-2 items-start">
-          <p className="modal-student-bio-text">{bio}</p>
+        <div className="grid-cols-1 md:grid-cols-3 justify-start">
+          <p className="modal-student-bio-text">{bio_text}</p>
         </div>
       </div>
     </>

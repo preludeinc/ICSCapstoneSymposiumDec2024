@@ -22,7 +22,9 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-
+  {
+    base: "/deploy-test/"
+  }
 ]);
 
 const App = () => {

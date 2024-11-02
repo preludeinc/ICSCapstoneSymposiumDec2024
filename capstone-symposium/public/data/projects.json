@@ -4,34 +4,121 @@
     "team": "Bit by Bit",
     "photo": "/arma_automotive.png",
     "sponsor": "Arma Automotive Inc.",
-    "students": ["Hanson Chan", "Jaspal Dhaliwal", "Kento Hyono"]
+    "intro": ["Bit by Bit is proud to work with Jon Taylor from Arma Automotive Inc. on the Dynamic5 project. Dynamic5 aims to create Computer-Aided Manufacturing (CAM software that generates a toolpath for a 5-axis CNC router. We are excited to research, learn, and develop the skills we need to tackle this project as it encapsulates many topics out of scope in our ICS program. This project will streamline manufacturing workflows by developing proprietary CAM software that generates G-code for their custom 5-axis CNC router, creating a simple-to-use CAM software while maintaining precise machining. Our team will focus on compiling a research document, documenting the existing CAM software, and developing the prototype software."],
+    "bios": [
+      { "id": 0,
+				"student": "Hanson Chan", 
+        "role": "Team Lead", 
+        "photo": "/hanson.jpg", 
+        "bio_text": "Hanson's unique approach to problem solving sets him apart. He thrives on learning and understanding the intricacies of systems, challenging the norm to create and enhance systems and applications. He specialises in Robotics, from designing (in Fusion 360) and manufacturing mechanical systems to creating software controls and automated assist systems, such as computer vision pipelines for object recognition and homography, PID controllers and operator-assisted controls, using state machines and multi-threading to ensure fast operations. Hanson has exceptional proficiency in a wide range of languages, including Java, C, C++, C#, Javascript, Python, SQL, and HTML (if you count it!). Outside of Camosun, Hanson works as a Web Dev contractor, building web applications according to the client's specifications. He enjoys working on personal projects to further his understanding in different areas, such as building a mobile application to keep track of finances, developing games (so he has an excuse to play them), and the occasional game of pool." },
+			{ "id": 1,
+				"student": "Jaspal Dhaliwal", 
+        "role": "Acting Team Lead / Secretary", 
+        "photo": "/jas.jpg", 
+        "bio_text": "Jaspal Dhaliwal is an entrepreneur who runs a successful fitness business, creating customized and progressive training programs for a diverse clientele, including athletes, seniors, and individuals with disabilities. His dedication to inclusive health is evident in each tailored plan he develops. At Camosun College, Jaspal alternates between secretary and team lead roles in his capstone project, focusing on leadership and support. He is actively learning programming languages like Python, JavaScript, and C++ to build innovative solutions by combining existing knowledge with new skills. As a team speaker, he fosters collaboration and participation. With a strong interest in graphic design, Jaspal creates custom hockey mask designs, adding an artistic touch to his technical work. He is committed to continuous learning and aims to apply his technical skills to develop practical solutions in the evolving tech industry." },
+			{ "id": 2,
+				"student": "Kento Hyono", 
+        "role": "Acting Team Lead / Secretary", 
+        "photo": "/kento.jpg", 
+        "bio_text": "Kento, an exceptionally driven international student from Japan, is passionate about acquiring new knowledge of highly complicated computer systems and tackling challenges to help his team reach their objectives. His most cherished academic disciplines are game and web development, a field he eagerly pursues with exceptional enthusiasm and dedication. He focuses on developing modular components to streamline system management, improve readability for team collaboration, and enhance reusability by minimizing redundancy. His mindset is always positive and realistic, which hypes up his entire team toward the same objective. In addition to his enthusiasm for software development, his outside interest is being physically active through various fitness exercises, cycling, and workouts that enable him to be mentally and physically healthy. The endurance acquired through hard workouts will be invaluable in various situations when the team is under difficult circumstances."}
+		],
+    "conclusion": ["Team Bit by Bit would like to thank our sponsor, Jon Taylor, for the invaluable learning opportunity and consistent assistance throughout the project. Equally, we are grateful to the ICS Department Chair at Camosun, Saryta Schaerer, for making this opportunity possible, and to our instructors, Katie Tanigawa and Ben Leather, for their dedicated support. As we move forward on this path, we are excited to enhance our skills and contribute positively to the field of information technology."]
   },
   {
     "id": 1,
     "team": "Khoreía",
     "photo": "/raino_dance_dark.png",
     "sponsor": "Raino Dance",
-    "students": ["Ryan Kim", "Wyatt Lane", "Seree Samutchaikit"]
+    "intro": ["Starting with modern dance in 1985, Raino Dance Studio now teaches over ten dance styles in downtown Victoria. Raino Dance has outgrown its current studio management tool and is looking to explore a custom solution. Khoreía is creating a prototype centered on user experience, so students and staff can focus on exploring the joys of dance."],
+    "bios": [
+      { "id": 0,
+				"student": "Wyatt Lane", 
+        "role": "", 
+        "photo": "/wyatt.jpg", 
+        "bio_text": "Wyatt has always wanted to be one of the people creating the fundamental building blocks of the worlds he explores in games. Since Wyatt has a firm grasp of code, he has developed a strong understanding of programming languages, including C#, C++, java, javascript, HTML, and database administration using SQL and NOSQL, in addition to experience with software such as Unity, Android Studio, Visual Studio, and Visual Studio Code. In the Information & Computer Systems Technology Program, he acquired web and mobile programming knowledge, database design and management, and game development skills. Wyatt looks forward to this opportunity to apply back and frontend integration in this self-guided project." },
+			{ "id": 1,
+				"student": "Ryan Kim", 
+        "role": "", 
+        "photo": "/ryan.jpg", 
+        "bio_text": "Ryan had a career path in management, but desired a greater challenge and a deeper understanding of the mechanisms behind our modern infrastructure. His experiences with teamwork, active curiosity, and focus on clear and efficient code earned him the VIATEC award for “high academic achievement, exceptional computing aptitude, excellent working relationships with colleagues, and very good communication skills”. Ryan is currently a volunteer instructor for the University of Victoria Cuban Salsa club and has taught and performed for numerous clubs, businesses, and events. This personal interest makes Ryan excited to contribute to Khoreía’s goal of improving business tools for dance professionals." },
+			{ "id": 2,
+				"student": "Seree Samutchaikit", 
+        "role": "", "photo": "/seree.jpg", 
+        "bio_text": "Seree is a backend developer known for his strong problem-solving skills and attention to detail. He is proficient in programming languages like JavaScript, C++, Python, and PHP.  As an enthusiastic cybersecurity professional, Seree stays updated on cybersecurity trends. He was a co-op student at the Ministry of Citizens’ Services, where he worked with Royal Roads University to successfully manage the deployment of Microsoft Defender across 160 servers. Seree also displayed initiative in beginning the initial phase of the Ministry’s Microsoft Intune project. Currently, he is contributing significantly to the Khoreía Project by building comprehensive and robust backend APIs. In his free time, he enjoys cycling, cooking, movies, music, and gaming."
+			}
+    ],
+    "conclusion": ["Khoreía’s members are excited to demonstrate their skills by meeting Raino Dance’s business needs. Khoreía thanks Raino Dance for providing the opportunity and Camosun College for arranging this educational experience."]
   },
   {
     "id": 2,
     "team": "Alt-F4",
     "photo": "/woo_woo.png",
     "sponsor": "Kimberlee Klein",
-    "students": ["Seamus O'Leary", "Karnveer Mall"]
+    "intro": ["Our Capstone project, sponsored by Woo Woo Network, focuses on creating a seamless platform that connects clients with healers, much like an Airbnb for alternative healing services. Our team is committed to enhancing the user experience through significant improvements, including an admin dashboard for managing refunds, a refined search engine to connect clients with healers based on specific needs, and a mobile-friendly interface. These updates aim to make it easier for both healers and clients to connect and manage appointments effectively."],
+    "bios": [
+      { "id": 0,
+				"student": "Karnveer Mall", 
+        "role": "Front End Developer", 
+        "photo": "/karn.jpg", 
+        "bio_text": "Karnveer is a creative problem solver with a knack for transforming complex ideas into functional, user-friendly interfaces. Recently, he played a key role in optimizing the Woo Woo Network platform's front-end design, enhancing both visual appeal and ease of use. His ability to take initiative has been critical in addressing technical challenges head on, ensuring that the platform meets the needs of users. Karnveer’s dedication to pushing technological boundaries makes him a valuable asset to the team." },
+			{ "id": 2,
+				"student": "Seamus O' Leary", 
+        "role": "Back End Developer", 
+        "photo": "/seamus.jpg", 
+        "bio_text": "Seamus O’Leary is from the Cowichan Valley and has always had a strong interest in computer science. This interest was furthered by his enrollment in the Information & Computer Systems Technology program at Camosun College. Over his time working in computer science, he has developed strong skills in several programming languages, such as Java, C++, Python, JavaScript, and C#. He has used these skills to create programs and tools for automating tasks for both him and his colleagues. He excels in the technical aspect of programming and thoroughly enjoys solving problems and coming up with new ways to approach challenges. He currently does some freelance work in game development with Unreal Engine and aspires to work in that field."}
+		],
+		"conclusion": ["We extend our thanks to Woo Woo Network for this exciting opportunity. Our team is committed to improving the platform to make it easier for healers and clients to connect and manage services. We look forward to delivering a robust solution that will support the platform’s growth and success."
+		]
   },
   {
     "id": 3,
     "team": "BitFusion",
     "photo": "/camosun_innovates.png",
     "sponsor": "Camosun Innovates",
-    "students": ["Dyson Polvi", "Manuel Rodriguez", "Charlie Thai"]
+    "intro": ["BitFusion is composed of Dyson Polvi, Manuel Rodriguez, and Charlie Thai. The sponsor for our Capstone is William Baard who is the representative for Camosun Innovates, and we chose to name the project The Dymach Billing Tool. The Dymach Billing Tool is an internal web service started by Camosun Innovates; it will allow Camosun clients to commission software services and physical items, like a website or a 3D printed object that fits the needs of the client. Clients with an account can manually view services without an employee as a middleman. By removing the middleman, the client will be able to review their quotes and invoices and view the costs, material, time, labour, and type of service. The most difficult task has been creating a database that accurately represents the needs of the business’s future, which the project has been carefully managed by proper communication between the team and the sponsor."],
+    "bios": [
+      { "id": 0,
+				"student": "Dyson Polvi", 
+				"role": "Full-Stack Developer", 
+				"photo": "/dyson.jpg", 
+				"bio_text":"Dyson has a passion for building tools that better the lives of other people; he greatly enjoys the process of video game development, using tools like Unity, Unreal Engine, and Godot to craft experiences that captivate players. Dyson is also passionate about web-development, wherein he aims to deliver services that improve people’s efficiency and productivity. Currently he works as a full-stack developer on the Dymach Billing tool using the MERN stack. Dyson is grateful for the opportunity to integrate into the pre-existing Camosun Innovates codebase and workflow, and he is excited to use the knowledge and experience from Camosun to better himself and improve the lives of his future clients. Motivated by the desire to expand his expertise, Manuel pursued further education in software development and database management at Camosun College."},
+			{ "id": 1,
+				"student": "Manuel Rodriguez", 
+				"role": "Designer / Front-End Developer", 
+				"photo": "/manuel.jpg", 
+				"bio_text": "Motivated by the desire to expand his expertise, Manuel pursued further education in software development and database management at Camosun College. Manuel enjoys learning and working with a wide range of programming languages and development frameworks. These include React, JavaScript, Node.js, Express, MongoDB, Python, Django, SQL and front-end tools like Tailwind and Material UI. His skill set allows him to bridge the gap between design and development; Manuel created several visually compelling and highly functional applications using many types of software. As he nears the completion of his program, he looks forward to tackling challenging projects and contributing to innovative solutions in his future endeavours." },
+			{ "id": 2,
+				"student": "Charlie Thai", 
+				"role": "Liason / Coordinator / Proofreader", 
+				"photo": "/charlie.jpg", 
+				"bio_text": "Charlie has also developed an interest in using software applications and video editing. During the three years at Camosun College, Charlie has received an eight-month co-op position in the Ministry of Citizens’ Services for the BC Government, which gave him the opportunity to develop workplace experiences by learning the cloud-based platform called ServiceNow and assisting in the creation of the Digital Security Threat Risk Assessment Tool. Now, Charlie is excited to complete the program and apply the skills learned, such as game development and project management, and the real-life workplace experiences he gained during his co-op."
+			}
+		],
+    "conclusion": ["BitFusion would like to express their utmost respect and thanks to William Baard from Camosun Innovates for the opportunity to work on the Dymach Billing Tool. The team would also like to thank the whole Camosun staff, especially Saryta Schaerer (Computer Science Department Chair), for their support throughout the past few years of the program. Team BitFusion is excited to complete the program this Fall term and apply what they learned in their future!"]
   },
   {
     "id": 4,
     "team": "Code Crafters",
     "photo": "/3treeslogo_dark_h.svg",
     "sponsor": "Three Trees Technical",
-    "students": ["Manu Kurian", "Jessica Guenter", "Angela Ziesel"]
+    "intro": ["Three Trees Technical, a British Columbia based software engineering company, and Code Crafters, comprised of developers Manu Kurian, Angela Ziesel, and Jessica Guenter, have allied to create a scheduling feature for Big Fish Enterprise Resource Planning (ERP). Big Fish ERP is a Commercial Printing Application, designed in collaboration with printing professionals; it facilitates inter-department and inter-team communication, streamlines printing processes, and integrates with a number of external tools."],
+    "bios": [
+      { "id": 0, 
+				"student": "Manu Kurian", 
+				"role": "", 
+				"photo": "/manu.jpg", 
+				"bio_text": "Manu is a web developer with a passion for creating optimized user-friendly applications. During the Information and Computer Systems Technologist program, Manu has gained experience building websites in HTML, JavaScript, and React, a 2D game in Unity C#, mobile applications using Swift, and working with relational and non-relational database management for efficient data storage within applications. Manu is excited to apply his design, creative skills, and problem-solving abilities in a front-end development role." },
+			{ "id": 1, 
+				"student": "Angela Ziesel", 
+				"role": "", 
+				"photo": "/angela.jpg", 
+				"bio_text": "Angela became interested in pursuing software development as a career after years of collaborating on and building custom programs while in her role as Systems Completion Manager in the Oil & Gas industry. These programs improved her team’s efficiency and significantly reduced data availability wait times critical to the successful completion of mega construction projects. Angela earned several awards over the course of her previous career in the categories of Innovation, Excellence, and Quality, and recently earned the 2023 Computer Science 1st Year award as a top student at Camosun College. Along with programming skills gained from the Computer and Information Systems diploma program, Angela brings leadership and organizational skills, as well as her experience working with diverse teams in locations around the world such as Thailand, Australia and the United States." },
+			{ "id": 2, 
+				"student": "Jessica Guenter", 
+				"role": "", 
+				"photo": "/jessica.jpg", 
+				"bio_text": "Jessica has loved computers and the internet since she first had access to them. Her strengths include writing, communication, learning, and developing new skills. She enjoyed building a 2D platformer in Unity, where she incorporated a sound-mixer and AI pathfinding and writing a message board app in API, React, Express, and Mongo, which provided exposure to REST APIs and full stack development. She looks forward to finding herself in a development role which provides new challenges, and contributing her leadership skills to a large project."}
+    ],
+    "conclusion": ["Manu, Angela, and Jessica are grateful to Ben Leather, their sponsor at Three Trees Technical, for this learning opportunity, his encouragement, and support. They are also grateful to Victoria Grandfield of Three Trees Technical, for her help and mentorship. Finally, they would like to thank the Camosun Faculty for their time and guidance throughout the ICS program."]
   }
 ]

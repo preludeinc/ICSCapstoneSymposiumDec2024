@@ -11,6 +11,9 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
+    backgroundImage: {
+      
+    },  
     extend: {
       animation: {
         'infinite-scroll': 'infinite-scroll 35s linear infinite',
@@ -29,7 +32,6 @@ module.exports = {
       helvetica: ["Helvetica", "sans-serif"],
       sans: ["Open Sans", "sans-serif"]
     },
-    darkMode: "class",
     plugins: [nextui()],
   },
 };

@@ -8,10 +8,7 @@ body {
 }
 
 h1 {
-  @apply mb-4 text-3xl
-    leading-none tracking-tight
-  text-gray-900 md:text-4xl 
-    lg:text-5xl dark:text-neutral-300;
+  @apply mb-4 text-3xl leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-neutral-300;
 }
 
 p {
@@ -26,18 +23,9 @@ img {
   @apply flex flex-1 w-auto h-auto object-contain;
 }
 
-/*  Navbar */
 .navbar {
   @apply w-full h-20 top-0 bg-gray-900 text-white
   flex px-2 items-center z-20;
-}
-
-.hamburger {
-  @apply hidden;
-}
-
-.navbar-logo {
-  @apply flex-shrink-0;
 }
 
 .navbar-title {
@@ -49,35 +37,32 @@ img {
   @apply text-gray-800;
 }
 
-.nav-mobile-container {
-  @apply fixed left-0 right-0 shadow-2xl top-[4.5rem] p-4 pt-2 bg-gray-900 border-b z-20;
+.nav-container {
+  @apply fixed left-0 right-0 shadow-2xl top-[4.5em] p-4 pt-2 bg-gray-900 border-b z-20;
 }
 
-/* Mobile nav styles */
-.nav-mobile-link {
+.nav-link {
   @apply flex items-center justify-between w-full p-3.5 rounded-xl z-10;
 }
 
-.nav-mobile-links {
+.nav-links {
   @apply w-full p-[0.08rem] rounded-xl hover:text-lime-300 hover:bg-gray-800;
 }
 
-/*  Footer */
 footer {
   @apply fixed 
 bg-slate-400
   bottom-0 w-full 
-  z-20 p-1;
+  z-20 p-2;
 }
 
 .footer-container,
 .footer-span {
-  @apply text-xl mx-auto ml-2 p-2 lg:py-2 max-w-screen-xl md:flex 
-  md:items-center md:justify-between font-semibold;
+  @apply text-xl mx-auto ml-2 p-2 lg:py-2 max-w-screen-xl md:flex md:items-center md:justify-between font-semibold;
 }
 
 .page-container {
-  @apply flex flex-col md:flex-row justify-center md:px-5 py-[3rem] md:py-[5rem] lg:py-[10rem];
+  @apply flex flex-col md:flex-row md:px-5 py-24 md:py-[5em] lg:py-[10em] md:m-0 place-items-center md:justify-center;
 }
 
 /*  Home Page  */
@@ -89,39 +74,43 @@ bg-slate-400
   @apply grid gap-4 justify-start;
 }
 
-.event-details {
-  @apply bg-gray-600 p-8 rounded-lg;
+.hero-one {
+	@apply md:absolute md:h-full md:w-auto md:max-w-none md:right-6
 }
 
-.event-date {
-  @apply text-xl;
+.hero-two {
+	@apply md:absolute md:h-full md:w-auto md:max-w-none md:left-6;
 }
 
-.event-time,
-.event-title {
-  @apply pt-4 pr-1 text-left text-3xl;
+.page-heading {
+  @apply flex justify-center text-slate-500 text-7xl mt-5 mx-auto font-helvetica rounded-md italic;
 }
 
-.event-description {
-  @apply pt-2 text-2xl;
+
+.ics-box-heading {
+	@apply text-sm lg:text-lg text-black inline-flex border border-[#222]/10 px-3 py-1 lg:py-2 rounded-lg tracking-tight
+}
+
+.intro-text {
+	@apply text-xl lg:text-2xl text-[#010D3E] tracking-tight mt-6 font-sans pr-24
+}
+
+.capstone-subheading {
+	@apply text-[#001E80] text-2xl md:text-3xl font-bold tracking-tighter;
+}
+
+.scroll-container {
+	@apply md:pt-4 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]
 }
 
 .buttons {
   @apply flex justify-start pt-3 mx-auto;
 }
 
-.page-heading {
-  @apply flex justify-center text-slate-500 text-7xl mt-5 mx-auto
-  font-helvetica rounded-md italic;
-}
-
 .button-default {
   border-radius: 30px;
-  @apply text-xl
- text-white shadow hover:shadow-lg outline-none
-  focus:outline-none mr-1 mb-1 px-6 py-2 ease-linear 
-  transition-all duration-150 bg-slate-950
-  cursor-pointer border-none font-roboto;
+  @apply text-xl text-white shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 px-6 py-2 ease-linear transition-all duration-150 bg-slate-950 cursor-pointer 
+	border-none font-roboto;
 }
 
 .button-default:hover {
@@ -129,31 +118,29 @@ bg-slate-400
 }
 
 .button-group {
-  @apply text-lg p-1
- text-black shadow hover:shadow-lg outline-none
-  focus:outline-none ease-linear 
-  transition-all duration-150 bg-transparent
-  border border-slate-950 rounded-s-lg
-hover:bg-[#c1d959] cursor-pointer font-roboto;
+  @apply text-lg p-1 text-black shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150 bg-transparent
+  border border-slate-950 rounded-s-lg hover:bg-[#c1d959] cursor-pointer font-roboto;
+}
+
+.scroll-banner {
+	@apply flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll
 }
 
 /* Teams Page & Cards */
 .team-heading {
-  @apply text-slate-500 text-[6rem] lg:text-8xl font-helvetica rounded-md italic my-10 m-4 md:my-4 md:mb-auto md:mt-0 lg:mt-6 lg:mr-4;
+  @apply text-slate-500 text-[5em] font-helvetica rounded-md italic mx-auto md:my-8;
 }
 
 .teams-container {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 gap-3 md:gap-2 lg:gap-3 xl:gap-5 md:px-5 lg:px-0 place-items-center
-  lg:container md:h-[1250px] lg:w-[2250px] lg:h-[1050px] xl:w-[2850px] xl:h-[1050px];  
+  @apply container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 lg:gap-5 md:gap-2;  
 }
 
 .team-card-container {
-  @apply grid bg-opacity-85 p-2 mx-5 md:p-10 md:my-10 md:py-10 lg:p-8 lg:m-5 grid-cols-2 lg:grid-rows-4 lg:gap-3 place-items-center
-  w-[22rem] h-[23rem] md:w-[24rem] md:h-[25rem] lg:h-[28rem] lg:w-[29rem] xl:h-[30rem] xl:w-[31rem] rounded-md border-8 bg-gray-50;
+  @apply grid bg-opacity-85 bg-gray-50 gap-1 grid-cols-2 lg:grid-rows-4 lg:gap-4 place-items-center rounded-md border-8 aspect-square m-2 pb-4 px-2 md:m-2 md:pb-0 lg:p-8;
 }
 
 .team-card-heading {
-  @apply text-slate-500 text-[1.7rem] lg:text-[2.5rem] font-semibold font-roboto my-[0.75] ml-2 md:mt-10 md:ml-0 lg:mt-12;
+  @apply text-slate-500 text-[2em] md:text-[1.75em] lg:text-[2em] font-semibold font-roboto ml-4 mt-5 md:ml-4 md:mt-2 lg:mt-10 lg:-ml-0 text-nowrap;
 }
 
 .card-section {
@@ -166,13 +153,11 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
 }
 
 .arrow-button {
-  @apply w-[4rem] h-[4rem] md:w-[4.5rem] md:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] border-2 
-  place-items-center text-slate-950 rounded-full transition-colors ease-in-out 
-  hover:bg-blue-950 hover:border-slate-200
-  cursor-pointer mr-1 md:mt-0 md:mr-0 lg:mt-8;
+  @apply w-[4em] h-[4rem] md:h-[4.25em] md:w-[4.25em] xl:h-[5em] xl:w-[5em] 
+	border-2 place-items-center text-slate-950 rounded-full transition-colors ease-in-out hover:bg-blue-950
+hover:border-slate-200 cursor-pointer mb-4 mr-3 md:mr-4 lg:-mr-1 lg:mt-4;
 }
 
-/* Project Modal - on Teams Page */
 .project-modal {
   @apply flex md:overflow-x-hidden overflow-y-auto justify-center items-center fixed inset-0 z-50 outline-none focus:outline-none;
 }
@@ -190,34 +175,37 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
 }
 
 .team-logo {
-  @apply flex h-[250px] w-[250px] md:h-[450px] md:w-[500px] object-contain my-2 md:my-[3rem];
+  @apply flex h-[20em] w-[20em] md:h-[25em] md:w-[25em] object-contain mt-10 md:my-[3em];
 }
 
 .modal-team-heading {
-  @apply text-3xl md:text-[3.75rem] font-semibold text-center mt-3 md:py-3;
+  @apply text-3xl md:text-[3.75em] font-semibold text-center mt-3 md:py-3;
 }
 
 .modal-sponsor-heading {
-  @apply text-3xl md:text-5xl md:font-semibold py-1 my-3 md:my-4 md:py-2 md:mt-3 text-slate-200;
+  @apply text-3xl md:text-4xl md:font-semibold py-1 my-3 md:my-4 md:py-2 md:mt-3 text-slate-200;
 }
 
 .modal-heading {
-  @apply text-3xl md:text-4xl lg:text-5xl pt-2 px-2 mt-2 md:pt-2 md:mt-5 lg:mt-10 md:my-1 font-bold text-slate-200;
+  @apply text-3xl md:text-4xl px-5 pt-2 mt-4 md:pt-10 md:mt-5 lg:mt-2 md:my-1 font-bold text-slate-200;
 }
 
 .modal-student-name {
-  @apply text-3xl lg:text-5xl my-4 md:mt-8 md:mb-5 mx-auto font-semibold text-slate-200;
+  @apply text-3xl md:text-4xl my-3 md:my-4 md:mt-8 md:mb-5 font-semibold text-slate-200 justify-start px-5 mx-auto;
+}
+
+.modal-student-role {
+  @apply text-2xl md:text-3xl text-slate-300 my-1 px-5 mx-auto;
 }
 
 .modal-student-bio-text {
-  @apply text-3xl lg:text-4xl md:mt-5 mx-auto mb-10 md:mb-5 md:pl-40;
+  @apply font-sans text-[1.25em] md:text-[2em] lg:text-[2em] leading-8 md:leading-10 text-gray-200 my-4 md:mt-12 px-5;
 }
 
 .modal-text {
-  @apply font-sans text-white text-2xl lg:text-3xl xl:text-4xl px-2 pb-5 my-5;
+  @apply font-sans text-gray-200 text-[1.5em] md:text-[2em] leading-8 md:leading-10 md:text-justify px-5 pb-12 my-5 md:[word-spacing:-3px] lg:[word-spacing:-3px];
 }
 
-/* Team Member - Within Modal */
 .team-member-info {
   @apply mx-auto mt-5 text-center;
 }
@@ -226,30 +214,22 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
   @apply gap-3 place-items-center;
 }
 
-/* Schedule Page */
-.schedule-heading {
-  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5rem] font-helvetica rounded-md mx-auto italic;
-  
-}
-
-
 /* Registration Page */
 .reg-heading {
-  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5rem] font-helvetica rounded-md mx-auto italic;
+  @apply m-4 mb-10 md:mt-4 text-slate-500 text-[5em] font-helvetica rounded-md mx-auto italic;
   
 }
 
 .reg-container {
-  @apply md:m-[5rem];
+  @apply md:mx-[4em] md:mt-[1.25em];
 }
 
 
 .sponsor-heading {
-  @apply text-xl md:text-xl lg:text-2xl sm:text-xl px-5;
+  @apply text-xl md:text-xl lg:text-3xl sm:text-xl px-5;
 }
 
 
-/* Media Queries */
 @media (min-width: 640px) {
   main {
     @apply px-8;
@@ -258,14 +238,6 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
   .heading-content {
     @apply flex-row justify-between items-center;
   }
-
-  /* h2 {
-    flex-basis: 30%;
-  } */
-
-  /* p {
-    flex-basis: 65%;
-  } */
 
   /* Teams Page */
   .team-grid {
@@ -276,13 +248,6 @@ hover:bg-[#c1d959] cursor-pointer font-roboto;
 @media (max-width: 768px) {
   .buttons {
     @apply flex flex-wrap items-start justify-start pt-3;
-  }
-  .navbar-title {
-    @apply hidden;
-  }
-
-  .hamburger {
-    @apply visible;
   }
 
   .reg-container {

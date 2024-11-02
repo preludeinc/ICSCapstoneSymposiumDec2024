@@ -11,19 +11,19 @@ export const Register = () => {
     eventId: "1042162645527",
     modal: false,
     onOrderComplete: handleOrderComplete,
-    iFrameHeight: 500,
+    iFrameHeight: 700,
     iFrameAutoAdapt: 100,
   });
 
   return (
     <>
     <Default>
-      <div className="container pt-10 my-[4rem] px-4">
+      <div className="container pt-10 my-[4em] px-4">
       <section className="flex flex-col justify-center align-center">
           <h1 className="reg-heading">
             Register
           </h1>
-          <div className="reg-container my-1">
+          <div className="reg-container">
             {checkOut ? (
               <div id={checkOut.id} />
             ): null}
